@@ -1,0 +1,10 @@
+package mypackage;
+
+import java.io.BufferedReader;
+
+public class index {
+    public static void main(String[] args) {
+    	BufferedReader br = new BufferedReader(new FireReader("originalWord.txt"));
+    	System.out.println(br);
+    }
+}

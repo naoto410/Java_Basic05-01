@@ -1,0 +1,16 @@
+package mypackage;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class index {
+    public static void main(String[] args) {
+        try (FileReader fr = new FileReader("/Users/yamashitanaoto/Desktop/ep.Java_beginner/02/2_確認問題/02/index.java")) {
+        	
+        } catch (IOException e) {
+        	e.printStackTrace();
+        }
+    }
+}

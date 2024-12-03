@@ -1,0 +1,16 @@
+package mypackage;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class index {
+    public static void main(String[] args) {
+    	String writeFilePath = "./src/mypackage/reverseWord.txt";
+    	try (BufferedWriter bw = new BufferedWriter(new FileWriter(writeFilePath))) {
+    		
+    	} catch (IOException e) {
+    		e.printStackTrace();
+    	}
+    }
+}

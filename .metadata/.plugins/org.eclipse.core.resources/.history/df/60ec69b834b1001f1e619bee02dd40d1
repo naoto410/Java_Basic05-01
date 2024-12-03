@@ -1,0 +1,15 @@
+package mypackage;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+
+public class index {
+    public static void main(String[] args) {
+    	FileReader fr = new FireReader("originalWord.txt");
+    	BufferedReader br = new BufferedReader(fr);
+    	System.out.println(br);
+    }
+}

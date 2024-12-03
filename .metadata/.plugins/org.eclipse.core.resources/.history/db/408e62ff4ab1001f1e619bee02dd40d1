@@ -1,0 +1,25 @@
+package mypackage;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class index {
+    public static void main(String[] args) {
+    	String readFilePath = "./src/mypackage/originalWord.txt";
+    	String writeFilePath = "./src/mypackage/reverseWord.txt";
+    	try (
+    		BufferedReader br = new BufferedReader(new FileReader(readFilePath));
+    	    BufferedWriter bw = new BufferedWriter(new FileWriter(writeFilePath))
+    	){
+    	    String word = br.readLine();
+    		bw.write(word);
+    		br.close();
+    		bw.flush();
+    	} catch (IOException e) {
+    		e.printStackTrace();
+    	}
+    }
+}

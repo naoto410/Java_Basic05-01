@@ -1,0 +1,13 @@
+package mypackage;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class index {
+    public static void main(String[] args) {
+    	String fileName = "originalWord.txt";
+        	BufferedReader br = new BufferedReader(new FileReader(fileName));
+        	String word = br.readLine();
+        	System.out.println(word);
+    }
+}
